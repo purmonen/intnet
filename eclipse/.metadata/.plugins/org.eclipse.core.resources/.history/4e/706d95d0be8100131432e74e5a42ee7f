@@ -1,0 +1,12 @@
+package chat;
+
+import java.net.*;
+import java.io.*;
+
+public class ClientHandler {
+
+	public ClientHandler(Socket clientSocket) {
+		
+	}
+	
+}

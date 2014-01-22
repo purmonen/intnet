@@ -1,0 +1,24 @@
+package chat;
+
+import java.net.*;
+import java.io.*;
+
+public class ClientHandler {
+
+	
+	
+	public ClientHandler(Socket clientSocket) {
+		try (
+				Socket clientSocket = new Socket(host, port);
+				BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+				PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+				BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+		) {
+			
+		} catch(IOException e) {
+			
+		}
+			
+	}
+	
+}

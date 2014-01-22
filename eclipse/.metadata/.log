@@ -1,0 +1,52 @@
+!SESSION 2014-01-20 10:42:35.534 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -data /Users/Sami/Dropbox/intnet/eclipse -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-01-20 10:42:42.558
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-01-20 11:29:12.724 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-01-20 11:29:20.605
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-01-20 13:50:13.634 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jdt.launching 1 0 2014-01-20 13:51:06.061
+!MESSAGE Installed JRE 'Java SE 7 [1.7.0_05]' removed due to missing VM type extension.
+
+!ENTRY org.eclipse.jdt.launching 1 0 2014-01-20 13:51:06.108
+!MESSAGE Installed JRE 'Java SE 6 [1.6.0_65-b14-462]' removed due to missing VM type extension.
+!SESSION 2014-01-22 05:47:22.412 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-01-22 05:48:09.698
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-01-22 06:08:22.703 -----------------------------------------------
+eclipse.buildId=4.3.0.M20130911-1000
+java.version=1.7.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/Sami/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-01-22 06:08:31.118
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
