@@ -7,6 +7,7 @@ import java.util.*;
 public class ClientHandler implements Runnable {
 
 	private static ArrayList<ClientHandler> clientHandlers = new ArrayList<ClientHandler>();
+	
 	private PrintWriter out;
 	private BufferedReader in;
 
@@ -16,6 +17,7 @@ public class ClientHandler implements Runnable {
 		in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));	
 		clientHandlers.add(this);
 	}
+
 
 	@Override
 	public void run() {
@@ -28,10 +30,6 @@ public class ClientHandler implements Runnable {
 			while ((line = in.readLine()) != null) {
 				broadCast(line);
 			}
-		} catch(IOException e) {}
-		try {
-			in.close();
-			out.close();
 		} catch(IOException e) {}
 	}
 	

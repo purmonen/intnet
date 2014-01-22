@@ -7,6 +7,7 @@ import java.util.*;
 public class ClientHandler implements Runnable {
 
 	private static ArrayList<ClientHandler> clientHandlers = new ArrayList<ClientHandler>();
+	
 	private PrintWriter out;
 	private BufferedReader in;
 
@@ -17,29 +18,37 @@ public class ClientHandler implements Runnable {
 		clientHandlers.add(this);
 	}
 
+
 	@Override
 	public void run() {
-		listenToClient();
+		String line;
+		
+		try {
+			while ((line = in.readLine()) != null) {
+				for (ClientHandler clientHandler : clientHandlers) {
+					if (clientHandler != this) {
+						clientHandler.out.println(line);
+					}
+				}
+			}
+			clientHandlers.remove(this);
+		} catch(IOException e) {}
 	}
 	
 	public void listenToClient() {
 		try {
 			String line;
 			while ((line = in.readLine()) != null) {
-				broadCast(line);
+				for (ClientHandler clientHandler : clientHandlers) {
+					if (clientHandler != this) {
+						clientHandler.out.println(line);
+					}
+				}
 			}
-		} catch(IOException e) {}
-		try {
-			in.close();
-			out.close();
 		} catch(IOException e) {}
 	}
 	
-	public void broadCast(String line) {
-		for (ClientHandler clientHandler : clientHandlers) {
-			if (clientHandler != this) {
-				clientHandler.out.println(line);	
-			}
-		}
+	public void broadCast() {
+		
 	}
 }

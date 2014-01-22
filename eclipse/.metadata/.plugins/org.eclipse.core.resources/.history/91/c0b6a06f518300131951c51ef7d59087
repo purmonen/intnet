@@ -21,10 +21,6 @@ public class ChatClient {
 			stdin = new BufferedReader(new InputStreamReader(System.in));
 			listenToServer();
 			listenToStdin();
-			in.close();
-			out.close();
-			stdin.close();
-			clientSocket.close();
 		} catch(IOException e) {}
 	}
 
@@ -49,13 +45,5 @@ public class ChatClient {
 				out.println(line);
 			}
 		} catch(IOException e) {} 
-	}
-	
-	public static void main(String[] args) {
-		int port = args.length > 1 ? Integer.parseInt(args[1]) : 1337;
-		try {
-			InetAddress host = InetAddress.getByName(args.length > 0 ? args[0] : "localhost");
-			new ChatClient(host, port);
-		} catch(UnknownHostException e) {}
 	}
 }

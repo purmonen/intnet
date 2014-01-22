@@ -21,10 +21,10 @@ public class ChatClient {
 			stdin = new BufferedReader(new InputStreamReader(System.in));
 			listenToServer();
 			listenToStdin();
+			clientSocket.close();
 			in.close();
 			out.close();
 			stdin.close();
-			clientSocket.close();
 		} catch(IOException e) {}
 	}
 
